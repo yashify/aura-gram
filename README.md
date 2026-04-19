@@ -107,9 +107,9 @@ Aura Gram is a full-stack web application designed to streamline content creatio
 # NVIDIA LLM API
 NVIDIA_API_KEY=your_nvidia_api_key_here
 
-# LLM Models (with defaults)
-VISION_MODEL=qwen/qwen3.5-122b-a10b
-TEXT_MODEL=meta/llama-4-maverick-17b-128e-instruct
+# LLM Models (configurable)
+VISION_MODEL=your-vision-model-name
+TEXT_MODEL=your-text-model-name
 
 # Supabase
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
@@ -119,15 +119,15 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key-here
 # Rate Limiting
 RATE_LIMIT_CALLS_PER_DAY=5          # Max API calls per day
 RATE_LIMIT_CALLS_PER_HOUR=2         # Max API calls per hour
-RATE_LIMIT_WINDOW_MS=3600000        # Rate limit window (ms)
+RATE_LIMIT_WINDOW_MS=your-window-in-ms  # Rate limit window (milliseconds)
 
 # Platform-Specific System Prompts (optional)
-DEFAULT_SYSTEM_PROMPT_INSTAGRAM="You are an expert Instagram caption writer..."
-DEFAULT_SYSTEM_PROMPT_TWITTER="You are a Twitter expert..."
-DEFAULT_SYSTEM_PROMPT_FACEBOOK="You are a Facebook marketing expert..."
-DEFAULT_SYSTEM_PROMPT_LINKEDIN="You are a LinkedIn professional..."
-DEFAULT_SYSTEM_PROMPT_TIKTOK="You are a TikTok content expert..."
-DEFAULT_SYSTEM_PROMPT_PINTEREST="You are a Pinterest expert..."
+DEFAULT_SYSTEM_PROMPT_INSTAGRAM=your-instagram-prompt
+DEFAULT_SYSTEM_PROMPT_TWITTER=your-twitter-prompt
+DEFAULT_SYSTEM_PROMPT_FACEBOOK=your-facebook-prompt
+DEFAULT_SYSTEM_PROMPT_LINKEDIN=your-linkedin-prompt
+DEFAULT_SYSTEM_PROMPT_TIKTOK=your-tiktok-prompt
+DEFAULT_SYSTEM_PROMPT_PINTEREST=your-pinterest-prompt
 DEFAULT_SYSTEM_PROMPT_THREADS="You are a Threads expert..."
 
 # Developer Dashboard (optional)

@@ -215,12 +215,12 @@ Initial State:
         ↓ [Vision Node]
 {
   description: "Golden sunset over ocean waves, dramatic..."
-  currentModel: "qwen/qwen3.5-122b-a10b"
+  currentModel: "your-vision-model-name"
 }
         ↓ [Writer Node]
 {
   caption: "✨ Golden hour vibes #sunset #ocean #nature"
-  currentModel: "meta/llama-4-maverick-17b-128e-instruct"
+  currentModel: "your-text-model-name"
   (4 hashtags - FAILS validation ✗)
 }
         ↓ [Critic Node - INVALID]
