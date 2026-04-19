@@ -1,0 +1,103 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* shadcn/ui Required Variables */
+  --background: #fffaeb;
+  --foreground: #1f1f1f;
+  --card: #fff0c2;
+  --card-foreground: #1f1f1f;
+  --popover: #ffffff;
+  --popover-foreground: #1f1f1f;
+  --muted: #1f1f1f;
+  --muted-foreground: #1f1f1f;
+  --accent: #fa520f;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #1f1f1f;
+  --input: #ffffff;
+  --ring: #fa520f;
+  --radius: 8px;
+
+  /* Mistral Warm Palette */
+  --mistral-orange: #fa520f;
+  --mistral-flame: #fb6424;
+  --block-orange: #ff8105;
+  --sunshine-900: #ff8a00;
+  --sunshine-700: #ffa110;
+  --sunshine-500: #ffb83e;
+  --sunshine-300: #ffd06a;
+  --block-gold: #ffe295;
+  --bright-yellow: #ffd900;
+  --warm-ivory: #fffaeb;
+  --cream: #fff0c2;
+  --mistral-black: #1f1f1f;
+  --pure-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--mistral-black);
+  background: var(--warm-ivory);
+  font-family: ui-sans-serif, system-ui, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Mistral Golden Shadow System */
+.golden-shadow {
+  box-shadow: 
+    rgba(127, 99, 21, 0.12) -8px 16px 39px,
+    rgba(127, 99, 21, 0.10) -33px 64px 72px,
+    rgba(127, 99, 21, 0.06) -73px 144px 97px,
+    rgba(127, 99, 21, 0.04) -131px 257px 115px,
+    rgba(127, 99, 21, 0.02) -194px 377px 127px;
+}
+
+/* Mistral Block Gradient */
+.mistral-gradient {
+  background: linear-gradient(
+    135deg,
+    #ffd900 0%,
+    #ffe295 20%,
+    #ffa110 40%,
+    #ff8105 60%,
+    #fb6424 80%,
+    #fa520f 100%
+  );
+}
+
+/* Sharp corners - no border radius */
+.sharp-corners {
+  border-radius: 0;
+}
+
+/* Display typography */
+.display-text {
+  font-size: 5.125rem;
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -2.05px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
