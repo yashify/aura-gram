@@ -1,0 +1,30 @@
+# Netlify Configuration
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Configure secret scanning to ignore non-sensitive configuration keys
+# These are default prompts and configuration values, not actual secrets
+[env]
+  [env.production]
+    # Build command for production
+    SECRETS_SCAN_OMIT_KEYS = "VISION_MODEL,TEXT_MODEL,RATE_LIMIT_WINDOW_MS,DEFAULT_SYSTEM_PROMPT_INSTAGRAM,DEFAULT_SYSTEM_PROMPT_TWITTER,DEFAULT_SYSTEM_PROMPT_FACEBOOK,DEFAULT_SYSTEM_PROMPT_LINKEDIN,DEFAULT_SYSTEM_PROMPT_TIKTOK,DEFAULT_SYSTEM_PROMPT_PINTEREST,DEFAULT_SYSTEM_PROMPT_THREADS"
+
+# Environment variables
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  condition = "!({country} = \"US\")"
+
+# Cache configuration for Next.js
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/public/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

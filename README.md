@@ -359,8 +359,11 @@ curl -X POST http://localhost:3000/api/generate \
 
 - [DESIGN.md](./DESIGN.md) - Design system documentation
 - [SUPABASE_SETUP.md](./SUPABASE_SETUP.md) - Database setup guide
+- [LANGGRAPH_ARCHITECTURE.md](./LANGGRAPH_ARCHITECTURE.md) - LangGraph workflow architecture & graph design
+- [LANGGRAPH_EXAMPLES.md](./LANGGRAPH_EXAMPLES.md) - LangGraph usage examples & extensions
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Supabase Documentation](https://supabase.com/docs)
+- [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [shadcn/ui Documentation](https://ui.shadcn.com)
 

@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-1 text-sm text-white/70">
               <li>
                 <a
-                  href="https://github.com/yashify/aura-gram/blob/main/README.md"
+                  href="https://github.com/yashify/aura-gram/blob/main/LANGGRAPH_ARCHITECTURE.md"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-mistral-orange transition"
